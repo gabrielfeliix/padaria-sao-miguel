@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Padaria São Miguel | Desde 1967 em Natal</title>
+  <meta name="description" content="Padaria São Miguel, em Natal/RN desde 1967. Pão fresquinho, café da manhã, almoço, lanches e mercearia nas unidades Jaguarari e Roberto Freire.">
+  <meta name="theme-color" content="#F37823">
+  <meta property="og:title" content="Padaria São Miguel | Desde 1967 em Natal">
+  <meta property="og:description" content="Tudo em um só lugar: pão fresquinho, café da manhã, almoço e lanches. Jaguarari e Capim Macio.">
+  <meta property="og:image" content="assets/img/fachada.jpg">
+  <link rel="icon" href="assets/img/icone.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/logo-branca.webp" fetchpriority="high">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Espiga da marca, reutilizada pelo site -->
+  <svg width="0" height="0" class="sr-only" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="espiga" viewBox="0 0 40 64">
+        <g fill="currentColor">
+          <ellipse cx="20" cy="8" rx="4.2" ry="8"/>
+          <ellipse cx="11" cy="20" rx="4" ry="8" transform="rotate(-28 11 20)"/>
+          <ellipse cx="29" cy="20" rx="4" ry="8" transform="rotate(28 29 20)"/>
+          <ellipse cx="11" cy="34" rx="4" ry="8" transform="rotate(-28 11 34)"/>
+          <ellipse cx="29" cy="34" rx="4" ry="8" transform="rotate(28 29 34)"/>
+          <ellipse cx="12" cy="47" rx="3.6" ry="7" transform="rotate(-28 12 47)"/>
+          <ellipse cx="28" cy="47" rx="3.6" ry="7" transform="rotate(28 28 47)"/>
+        </g>
+        <path d="M20 14V64" stroke="currentColor" stroke-width="2" fill="none"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo" id="topo">
+    <a class="topo__marca" href="#inicio" aria-label="Padaria São Miguel, início">
+      <img src="assets/img/logo-branca.webp" alt="São Miguel Padaria" width="719" height="352">
+    </a>
+    <button class="topo__menu" type="button" aria-expanded="false" aria-controls="nav">
+      <span class="sr-only">Abrir menu</span>
+      <span class="topo__menu-linha" aria-hidden="true"></span>
+      <span class="topo__menu-linha" aria-hidden="true"></span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Seções do site">
+      <a href="#mesa">Do café ao jantar</a>
+      <a href="#loja">A loja</a>
+      <a href="#encomenda">Encomendas</a>
+      <a href="#historia">Desde 1967</a>
+      <a href="#unidades">Unidades</a>
+      <a class="botao botao--casca nav__pedir" href="https://estabelecimentos.cardapioweb.com/padaria_sao_miguel" target="_blank" rel="noopener">Pedir pelo cardápio</a>
+    </nav>
+    <span class="topo__progresso" aria-hidden="true"></span>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio">
+      <div class="hero__fundo" aria-hidden="true">
+        <video class="hero__video" muted loop playsinline preload="auto"></video>
+        <!-- Celular em pé recebe o vídeo vertical; o resto, o horizontal -->
+        <script>
+          (function () {
+            var video = document.currentScript.previousElementSibling;
+            var sufixo = window.matchMedia('(max-width: 48rem) and (orientation: portrait)').matches ? '-cel' : '';
+            video.poster = 'assets/img/hero-poster' + sufixo + '.webp';
+            video.src = 'assets/video/hero' + sufixo + '.mp4';
+          })();
+        </script>
+      </div>
+
+      <div class="hero__centro">
+        <img class="hero__logo" src="assets/img/logo-branca.webp" alt="São Miguel Padaria" width="719" height="352" fetchpriority="high">
+        <h1 class="hero__lema" data-palavras>Tudo em um só lugar, desde 1967</h1>
+        <p class="hero__apoio">Pão fresquinho, café da manhã, almoço, lanches e a mercearia para completar a compra.</p>
+        <div class="hero__acoes">
+          <a class="botao botao--casca" href="https://estabelecimentos.cardapioweb.com/padaria_sao_miguel" target="_blank" rel="noopener">Pedir pelo cardápio</a>
+          <a class="botao botao--linha" href="#encomenda">Fazer uma encomenda</a>
+        </div>
+      </div>
+
+      <p class="hero__onde">
+        <a href="#unidades">Rua Jaguarari, 2507, Lagoa Nova</a>
+        <button class="hero__pausa" type="button" aria-pressed="false">Pausar vídeo</button>
+        <a href="#unidades">Av. Eng. Roberto Freire, 1768, Capim Macio</a>
+      </p>
+    </section>
+
+    <!-- Letreiro corrido -->
+    <div class="letreiro" aria-hidden="true">
+      <div class="letreiro__trilho" data-letreiro>
+        <span>Pão fresquinho</span><svg><use href="#espiga"/></svg>
+        <span>Café da manhã</span><svg><use href="#espiga"/></svg>
+        <span>Almoço</span><svg><use href="#espiga"/></svg>
+        <span>Lanches</span><svg><use href="#espiga"/></svg>
+        <span>Jantar</span><svg><use href="#espiga"/></svg>
+        <span>Mercearia</span><svg><use href="#espiga"/></svg>
+      </div>
+    </div>
+
+    <!-- ================= DO CAFÉ AO JANTAR ================= -->
+    <section class="mesa" id="mesa">
+      <div class="largura">
+        <h2 class="titulo" data-revela="titulo">Do café da manhã ao jantar</h2>
+
+        <div class="mesa__grade">
+          <div class="mesa__lista" id="mesa-lista">
+
+            <div class="prato is-ativo" data-prato="0">
+              <h3 class="prato__nome"><button type="button" aria-expanded="true" aria-controls="prato-0">Café da manhã</button></h3>
+              <div class="prato__corpo" id="prato-0"><div>
+                <p>Café quente, pão na chapa, cuscuz e o que mais a manhã pedir. Para comer com calma ou levar no caminho do trabalho.</p>
+                <p class="prato__como">No salão e para levar</p>
+              </div></div>
+              <span class="prato__tempo" aria-hidden="true"></span>
+            </div>
+
+            <div class="prato" data-prato="1">
+              <h3 class="prato__nome"><button type="button" aria-expanded="false" aria-controls="prato-1">Almoço e jantar</button></h3>
+              <div class="prato__corpo" id="prato-1"><div>
+                <p>Comida de casa, servida todo dia, e prato quente para fechar a noite. Pergunte na loja ou veja no cardápio o que tem hoje.</p>
+                <p class="prato__como">No salão</p>
+              </div></div>
+              <span class="prato__tempo" aria-hidden="true"></span>
+            </div>
+
+            <div class="prato" data-prato="2">
+              <h3 class="prato__nome"><button type="button" aria-expanded="false" aria-controls="prato-2">Lanches</button></h3>
+              <div class="prato__corpo" id="prato-2"><div>
+                <p>Pão de queijo saindo do forno, salgados e doces da vitrine para a fome do meio da tarde.</p>
+                <p class="prato__como">No balcão e no cardápio online</p>
+              </div></div>
+              <span class="prato__tempo" aria-hidden="true"></span>
+            </div>
+
+            <div class="prato" data-prato="3">
+              <h3 class="prato__nome"><button type="button" aria-expanded="false" aria-controls="prato-3">Padaria</button></h3>
+              <div class="prato__corpo" id="prato-3"><div>
+                <p>Pães, bolos de forma e biscoitos em pote, para a mesa de casa.</p>
+                <p class="prato__como">No balcão e sob encomenda</p>
+              </div></div>
+              <span class="prato__tempo" aria-hidden="true"></span>
+            </div>
+
+            <a class="botao botao--laranja mesa__botao" href="https://estabelecimentos.cardapioweb.com/padaria_sao_miguel" target="_blank" rel="noopener">Abrir o cardápio com preços</a>
+          </div>
+
+          <div class="mesa__janela" id="mesa-janela" aria-hidden="true">
+            <video class="mesa__midia is-ativa" muted loop playsinline preload="none" poster="assets/img/cafe-poster.webp"><source src="assets/video/cafe.mp4" type="video/mp4"></video>
+            <video class="mesa__midia" muted loop playsinline preload="none" poster="assets/img/almoco-poster.webp"><source src="assets/video/almoco.mp4" type="video/mp4"></video>
+            <video class="mesa__midia" muted loop playsinline preload="none" poster="assets/img/paodequeijo-poster.webp"><source src="assets/video/paodequeijo.mp4" type="video/mp4"></video>
+            <img class="mesa__midia mesa__midia--foto" src="assets/img/bolos.webp" alt="" loading="lazy" width="720" height="1280">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= A LOJA ================= -->
+    <section class="loja" id="loja">
+      <div class="largura loja__abre">
+        <h2 class="titulo" data-revela="titulo">Por dentro da loja</h2>
+        <div class="loja__setas">
+          <button class="seta" type="button" id="loja-voltar" aria-label="Fotos anteriores"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="seta" type="button" id="loja-avancar" aria-label="Próximas fotos"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+
+      <ul class="loja__faixa" id="loja-faixa" tabindex="0" aria-label="Fotos da loja">
+        <li class="cartao cartao--arco">
+          <video class="cartao__midia" id="loja-video" muted loop playsinline preload="none" poster="assets/img/fachada.webp" aria-label="Vídeo curto de um passeio pela loja"><source src="assets/video/loja.mp4" type="video/mp4"></video>
+          <p class="cartao__legenda">Um passeio de 12 segundos</p>
+        </li>
+        <li class="cartao"><img class="cartao__midia" src="assets/img/vitrine.webp" alt="Cliente com cesta olhando a vitrine de salgados" loading="lazy" width="720" height="1280"><p class="cartao__legenda">A vitrine de salgados</p></li>
+        <li class="cartao cartao--baixo"><img class="cartao__midia" src="assets/img/paodequeijo.webp" alt="Bandejas de pão de queijo e folhados na vitrine" loading="lazy" width="720" height="1280"><p class="cartao__legenda">Pão de queijo o dia inteiro</p></li>
+        <li class="cartao cartao--arco"><img class="cartao__midia" src="assets/img/balcao.webp" alt="Atendente pesando pães no balcão" loading="lazy" width="720" height="1280"><p class="cartao__legenda">Pesado na hora</p></li>
+        <li class="cartao"><img class="cartao__midia" src="assets/img/geladeira.webp" alt="Geladeiras com sucos, iogurtes e refrigerantes" loading="lazy" width="720" height="1280"><p class="cartao__legenda">Bebida gelada</p></li>
+        <li class="cartao cartao--baixo"><img class="cartao__midia" src="assets/img/bolos.webp" alt="Mesa com bolos de forma embalados" loading="lazy" width="720" height="1280"><p class="cartao__legenda">A mesa dos bolos</p></li>
+        <li class="cartao cartao--arco"><img class="cartao__midia" src="assets/img/biscoitos.webp" alt="Potes de biscoito empilhados na prateleira de madeira" loading="lazy" width="720" height="1280"><p class="cartao__legenda">Biscoitos em pote</p></li>
+        <li class="cartao"><img class="cartao__midia" src="assets/img/corredor.webp" alt="Corredor da mercearia com prateleiras e geladeiras" loading="lazy" width="720" height="1280"><p class="cartao__legenda">A mercearia</p></li>
+      </ul>
+    </section>
+
+    <!-- ================= ENCOMENDAS ================= -->
+    <section class="encomenda" id="encomenda">
+      <div class="largura encomenda__grade">
+        <div class="encomenda__texto">
+          <h2 class="titulo" data-revela="titulo">Encomende pelo WhatsApp</h2>
+          <p data-revela>Escreva o que você precisa e a mensagem chega pronta no WhatsApp de encomendas. A equipe confirma valores, horário e forma de pagamento por lá.</p>
+          <p data-revela>Para pedir agora, use o cardápio online. É por lá que sai mais barato.</p>
+          <a class="botao botao--linha" href="https://estabelecimentos.cardapioweb.com/padaria_sao_miguel" target="_blank" rel="noopener">Pedir pelo cardápio</a>
+
+          <div class="encomenda__cesto" aria-hidden="true">
+            <img class="encomenda__pao" src="assets/img/bio/pao.webp" alt="" loading="lazy" width="320" height="250" data-paralaxe="-0.18">
+            <img src="assets/img/bio/cesto.webp" alt="" loading="lazy" width="720" height="611" data-paralaxe="0.06">
+          </div>
+        </div>
+
+        <form class="form" id="form-pedido" novalidate data-revela="cartao">
+          <div class="campo">
+            <label for="p-nome">Seu nome</label>
+            <input id="p-nome" name="nome" type="text" autocomplete="given-name" required>
+            <p class="campo__erro" id="erro-nome" hidden>Informe seu nome para a equipe saber quem está pedindo.</p>
+          </div>
+          <div class="campo">
+            <label for="p-itens">O que você quer encomendar</label>
+            <textarea id="p-itens" name="itens" rows="4" placeholder="Ex.: 30 pães de queijo, 2 bolos de forma" required></textarea>
+            <p class="campo__erro" id="erro-itens" hidden>Escreva pelo menos um item da encomenda.</p>
+          </div>
+          <fieldset class="campo campo--opcoes">
+            <legend>Onde você quer retirar</legend>
+            <label class="opcao"><input type="radio" name="unidade" value="Unidade Jaguarari" checked><span>Jaguarari</span></label>
+            <label class="opcao"><input type="radio" name="unidade" value="Unidade Roberto Freire"><span>Roberto Freire</span></label>
+          </fieldset>
+          <div class="campo">
+            <label for="p-quando">Para quando <span class="campo__opcional">(opcional)</span></label>
+            <input id="p-quando" name="quando" type="text" placeholder="Ex.: sábado de manhã">
+          </div>
+          <button class="botao botao--laranja form__enviar" type="submit">Enviar encomenda pelo WhatsApp</button>
+          <p class="form__nota">Nada fica salvo neste site. O botão abre o WhatsApp com a mensagem já escrita.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= HISTÓRIA ================= -->
+    <section class="historia" id="historia">
+      <svg class="historia__espiga" aria-hidden="true" data-paralaxe="0.14"><use href="#espiga"/></svg>
+      <div class="largura historia__grade">
+        <div class="historia__texto">
+          <p class="historia__ano" aria-hidden="true" data-conta="1967" data-de="1900">1967</p>
+          <h2 class="titulo" data-revela="titulo">Uma família do sertão, uma padaria de Natal</h2>
+          <p data-revela>A história começa em Santana do Matos, com Raimundo Miguel Ferreira e Maria de Araújo Ferreira. Ele vendia nos distritos o que a família produzia no sítio, até virar dono de uma padaria no centro da cidade.</p>
+          <p data-revela>De lá a São Miguel veio para a capital e ficou. A casa continua com a família, e muita gente que hoje compra o pão aqui vinha pela mão dos pais.</p>
+          <p class="historia__conta" data-revela><span class="historia__anos" id="anos-forno" data-conta="59" data-de="0">59</span> anos de forno aceso</p>
+        </div>
+        <div class="historia__fotos">
+          <img class="historia__foto historia__foto--a" data-revela="foto" data-paralaxe="-0.05" src="assets/img/fachada.webp" alt="Fachada da Padaria São Miguel, com o letreiro sobre a entrada" loading="lazy" width="720" height="1280">
+          <img class="historia__foto historia__foto--b" data-revela="foto" data-paralaxe="0.08" src="assets/img/letreiro.webp" alt="Totem da São Miguel Padaria na avenida" loading="lazy" width="720" height="1280">
+          <img class="historia__foto historia__foto--c" data-revela="foto" data-paralaxe="0.03" src="assets/img/biscoitos.webp" alt="Potes de biscoito na prateleira" loading="lazy" width="720" height="1280">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= UNIDADES ================= -->
+    <section class="unidades" id="unidades">
+      <div class="largura">
+        <h2 class="titulo" data-revela="titulo">Duas portas em Natal</h2>
+
+        <div class="unidades__grade">
+          <div class="unidades__lista">
+            <button class="unidade is-ativa" type="button" aria-pressed="true" aria-controls="mapa"
+              data-mapa="https://www.google.com/maps?q=Padaria+S%C3%A3o+Miguel+Rua+Jaguarari+2507+Lagoa+Nova+Natal+RN&output=embed"
+              data-titulo="Mapa: Padaria São Miguel, Rua Jaguarari, 2507, Lagoa Nova">
+              <span class="unidade__nome">Jaguarari</span>
+              <span class="unidade__endereco">Rua Jaguarari, 2507<br>Lagoa Nova, Natal/RN</span>
+            </button>
+            <a class="unidade__rota" href="https://www.google.com/maps/dir/?api=1&destination=Padaria+S%C3%A3o+Miguel+Rua+Jaguarari+2507+Natal+RN" target="_blank" rel="noopener">Traçar rota até a Jaguarari</a>
+
+            <button class="unidade" type="button" aria-pressed="false" aria-controls="mapa"
+              data-mapa="https://www.google.com/maps?q=Padaria+S%C3%A3o+Miguel+Av.+Engenheiro+Roberto+Freire+1768+Capim+Macio+Natal+RN&output=embed"
+              data-titulo="Mapa: Padaria São Miguel, Av. Engenheiro Roberto Freire, 1768, Capim Macio">
+              <span class="unidade__nome">Roberto Freire</span>
+              <span class="unidade__endereco">Av. Engenheiro Roberto Freire, 1768<br>Capim Macio, Natal/RN</span>
+            </button>
+            <a class="unidade__rota" href="https://www.google.com/maps/dir/?api=1&destination=Padaria+S%C3%A3o+Miguel+Av.+Engenheiro+Roberto+Freire+1768+Natal+RN" target="_blank" rel="noopener">Traçar rota até a Roberto Freire</a>
+
+            <p class="unidades__contato">
+              Encomendas pelo WhatsApp <a href="https://wa.me/5584994815161" target="_blank" rel="noopener">(84) 99481-5161</a>.
+              Os horários de cada unidade ficam nos destaques do <a href="https://www.instagram.com/saomiguelpadaria/" target="_blank" rel="noopener">Instagram</a>.
+            </p>
+          </div>
+
+          <div class="unidades__mapa" id="mapa" data-revela="cartao">
+            <iframe id="mapa-quadro" title="Mapa: Padaria São Miguel, Rua Jaguarari, 2507, Lagoa Nova" referrerpolicy="no-referrer-when-downgrade"
+              data-src="https://www.google.com/maps?q=Padaria+S%C3%A3o+Miguel+Rua+Jaguarari+2507+Lagoa+Nova+Natal+RN&output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="letreiro letreiro--claro" aria-hidden="true">
+    <div class="letreiro__trilho letreiro__trilho--volta" data-letreiro>
+      <span>Tradição desde 1967</span><svg><use href="#espiga"/></svg>
+      <span>Jaguarari</span><svg><use href="#espiga"/></svg>
+      <span>Roberto Freire</span><svg><use href="#espiga"/></svg>
+    </div>
+  </div>
+
+  <footer class="rodape">
+    <div class="largura rodape__grade">
+      <img class="rodape__logo" src="assets/img/logo-branca.webp" alt="São Miguel Padaria" loading="lazy" width="719" height="352">
+      <ul class="rodape__links">
+        <li><a href="https://www.instagram.com/saomiguelpadaria/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://wa.me/5584994815161" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="https://estabelecimentos.cardapioweb.com/padaria_sao_miguel" target="_blank" rel="noopener">Cardápio</a></li>
+        <li><a href="bio/">Links</a></li>
+      </ul>
+      <p class="rodape__fim">Padaria São Miguel, Natal/RN.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
