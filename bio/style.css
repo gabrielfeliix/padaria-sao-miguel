@@ -142,7 +142,9 @@ img {
 
 .faixa--cardapio, .faixa--site { color: var(--branco); }
 
-.faixa__foto { position: absolute; bottom: 0; width: 118px; height: 172px; pointer-events: none; z-index: 2; }
+/* A sombra fica no invólucro: na própria imagem ela seria cortada pela
+   máscara, deixando uma linha reta na borda da caixa. */
+.faixa__foto { position: absolute; bottom: 0; width: 118px; height: 172px; pointer-events: none; z-index: 2; filter: drop-shadow(0 8px 12px rgba(58, 26, 16, 0.4)); }
 .faixa__foto--esq { left: 8px; }
 .faixa__foto--dir { right: 8px; }
 .faixa__foto--larga { width: 150px; right: 2px; }
@@ -152,7 +154,6 @@ img {
   object-fit: contain; object-position: bottom center;
   transform: scale(1.08); transform-origin: bottom center;
   transition: var(--suave);
-  filter: drop-shadow(0 8px 12px rgba(58, 26, 16, 0.4));
   -webkit-mask-image: linear-gradient(to bottom, #000 84%, transparent 100%);
   mask-image: linear-gradient(to bottom, #000 84%, transparent 100%);
 }
